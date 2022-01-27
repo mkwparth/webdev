@@ -1,0 +1,168 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(45deg, transparent, #009688);
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+
+        }
+
+        .signup-box {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .col-1,
+        .col-2 {
+            flex-basis: 50%;
+            flex-grow: 1;
+        }
+
+        .col-1 img {
+            width: 100%;
+            display: block;
+
+        }
+
+        .col-2 {
+            background: #fff;
+            padding: 40px 8%;
+            color: #333;
+            min-width: 250px;
+        }
+
+        .col-2 h2 {
+            font-weight: 600;
+        }
+
+        .col-2 span {
+            font-size: 12px;
+        }
+
+        .col-2 span a {
+            text-decoration: none;
+            color: #ef005d;
+            font-weight: 500;
+        }
+
+        .googlelink {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border: 2px solid #ef005d;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .googlelink img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .col-2 h4 {
+            margin-bottom: 10px;
+            /* align-items: center; */
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .input-f {
+            padding: 10px;
+            border: 2px solid #ef005d;
+            border-radius: 4px;
+            outline: none;
+            display: block;
+            width: 100%;
+            margin: 5px 0 10px;
+        }
+        form label{
+            font-weight:500;
+            font-size: 12px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+        }
+        .row input{
+            margin-right: 6px;
+        }
+        .col-2 form button{
+            padding: 10px;
+            border: 2px solid #ef005d;
+            border-radius: 4px;
+            outline: none;
+            display: block;
+            width: 100%;
+            margin: 18px 0 10px;
+            background: #ef005d;
+            color: #fff;
+            cursor: pointer;
+        }
+         
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="signup-box">
+            <div class="col-1">
+                <img src="image.png">
+            </div>
+            <div class="col-2">
+                <h2>Let's Start Today</h2>
+                <span>Already have an account? <a href="#">Login</a> </span>
+                <a href="#" class="googlelink">
+                    <img src="google.png">
+                    Continue with Google
+                </a>
+                <h4>or</h4>
+
+                <form action="">
+                    <label for="">Email Address</label>
+                    <input type="text" placeholder="Enter your Email address" class="input-f">
+                    <label for="">Set Password</label>
+                    <input type="password" placeholder="Enter your password" class="input-f">
+                    <div class="row">
+                        <input type="checkbox" checked>
+                        <span> I agree With <a href=""> Term & Condition</a></span>
+                    </div>
+                    <button type="submit">
+                        Register Now
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
